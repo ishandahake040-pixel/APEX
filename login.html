@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>APEX | Sign In</title>
+
+    <!-- CSS PATH -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="auth-page">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <a href="../index.html" class="logo">
+            APEX<span>.</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="../index.html">HOME</a>
+            <a href="hamilton.html">HAMILTON</a>
+            <a href="cars.html">CARS</a>
+            <a href="grid.html">THE GRID</a>
+            <a href="circuits.html">CIRCUITS</a>
+        </div>
+
+    </nav>
+
+
+    <!-- LOGIN SECTION -->
+    <main class="auth-container">
+
+        <!-- LEFT SIDE -->
+        <section class="auth-content">
+
+            <h1 class="section-tag">WELCOME TO THE GRID</h1>
+
+            <h1>
+                YOUR PASS.<br>
+                YOUR <span>APEX.</span>
+            </h1>
+
+            <p class="auth-description">
+                Join the APEX community. Explore the world of
+                Formula 1, follow the legends and experience
+                racing beyond the limit.
+            </p>
+
+
+            <!-- AUTHENTICATION FORM -->
+            <div class="auth-form">
+
+                <!-- TABS -->
+                <div class="auth-tabs">
+
+                    <button
+                        type="button"
+                        class="auth-tab active"
+                        id="loginTab">
+
+                        SIGN IN
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="auth-tab"
+                        id="registerTab">
+
+                        CREATE ACCOUNT
+
+                    </button>
+
+                </div>
+
+
+                <!-- FORM -->
+                <form id="authForm">
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            EMAIL ADDRESS
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            PASSWORD
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            minlength="6"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="auth-submit"
+                        id="submitBtn">
+
+                        SIGN IN
+
+                    </button>
+
+                    <p id="authMessage" role="status" aria-live="polite"></p>
+
+                </form>
+
+
+                <p class="auth-footer">
+                    BUILT FOR THE LOVE OF RACING.
+
+                    <span>APEX © 2026</span>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="auth-image">
+
+            <div class="auth-image-overlay">
+
+                <p>NO LIMITS.</p>
+
+                <h2>
+                    ONLY<br>
+                    FORWARD.
+                </h2>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- AUTHENTICATION JAVASCRIPT -->
+    <script type="module" src="./auth.js"></script>
+   <script src="../index.js"></script>
+</body>
+</html>
